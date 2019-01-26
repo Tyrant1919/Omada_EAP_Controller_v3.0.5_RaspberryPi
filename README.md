@@ -11,7 +11,7 @@ apt --fix-broken install
 ### Will try to start but fail ###
 sudo nano /opt/tplink/EAPController/bin/control.sh
 ###
-  Change: JRE_HOME="${OMADA_HOME}/jre"
+  	Change: JRE_HOME="${OMADA_HOME}/jre"
 	To:	JRE_HOME="/usr/lib/jvm/java-8-openjdk-armhf"
 	
 	Change: JAVA_OPTS="-server -Xms128m -Xmx1024m -XX:MaxHeapFreeRatio=60 -XX:MinHeapFreeRatio=30  -XX:+HeapDumpOnOutOfMemoryError -Deap.home=${OMADA_HOME}"
