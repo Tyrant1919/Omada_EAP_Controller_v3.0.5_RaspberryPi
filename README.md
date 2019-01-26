@@ -1,4 +1,4 @@
-login. Should start in /home/pi
+### login. Should start in /home/pi 
 
 sudo apt-get update  
 sudo apt-get upgrade  
@@ -7,12 +7,12 @@ unzip Omada_Controller_V3.0.5_Linux_x64.deb.zip
 sudo rm Omada_Controller_V3.0.5_Linux_x64.deb.zip  
 sudo dpkg -i Omada_Controller_V3.0.5_Linux_x64.deb  
 
-Confirm install directory. Should complete succesfull-ish. Will ask to install jsvc
+### Confirm install directory. Should complete succesfull-ish. Will ask to install jsvc
 
 sudo apt-get install jsvc  
 apt --fix-broken install
 
-Will try to start but fail
+### Will try to start but fail
 
 sudo nano /opt/tplink/EAPController/bin/control.sh
 ###
