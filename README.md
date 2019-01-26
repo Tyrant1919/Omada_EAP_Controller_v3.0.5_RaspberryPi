@@ -9,7 +9,7 @@ sudo dpkg -i Omada_Controller_V3.0.5_Linux_x64.deb
 
 Confirm install directory. Should complete succesfull-ish. Will ask to install jsvc
 
-sudo apt-get install jsvc
+sudo apt-get install jsvc  
 apt --fix-broken install
 
 Will try to start but fail
