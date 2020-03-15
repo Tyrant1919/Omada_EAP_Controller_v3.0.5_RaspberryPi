@@ -1,0 +1,13 @@
+sudo wget XXXX
+sudo dpkg -i XXX
+sudo nano /opt/tplink/EAPController/bin/control.sh
+	Change: JRE_HOME="${OMADA_HOME}/jre"
+	To:	JRE_HOME="/usr/lib/jvm/java-8-openjdk-armhf"
+
+	Change: JAVA_OPTS="-server -Xms128m -Xmx1024m -XX:MaxHeapFreeRatio=60 -XX:MinHeapFreeRatio=30  -XX:+HeapDumpOnOutOfMemoryError -Deap.home=${OMADA_HOME}"
+	To:     JAVA_OPTS="-Xms128m -Xmx1024m -XX:MaxHeapFreeRatio=60 -XX:MinHeapFreeRatio=30  -XX:+HeapDumpOnOutOfMemoryError -Deap.home=${OMADA_HOME}"
+
+
+sudo mv /opt/tplink/EAPController/bin/mongod /opt/tplink/EAPController/bin/mongod.backup
+sudo ln -s /usr/bin/mongod /opt/tplink/EAPController/bin/mongod
+sudo tpeap start
